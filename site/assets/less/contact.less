@@ -1,0 +1,114 @@
+.contact-page {
+	.page-style;
+
+	.contact-container {
+		.absolute;
+		top: 50%;
+		left: 50%;
+		width: 470px;
+		height: 470px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		transform: translate(-50%, -50%);
+		.white-box, .yellow-box {
+			.absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+		}
+		.white-box {
+			border: 1px solid #FFF;
+			// transform: translate(15px, -15px);
+
+		}
+		.yellow-box {
+			border: 1px solid @yellow;
+			// transform: translate(-15px, 15px);
+		}
+		.content-wrap {
+			h2 {
+				.header-font;
+				span {
+					font-size: 48px;
+					font-weight: 100;
+					color: @purple;
+					background: @yellow;
+					text-transform: uppercase;
+					margin-bottom: 40px;
+					padding: 0 7px;
+					b {
+						font-weight: 600;
+					}
+				}
+				small {
+					margin-top: 15px;
+					font-size: 48px;
+					color: @yellow;
+					font-weight: 100;
+					text-align: center;
+					display: block;
+				}
+			}
+			.cv-btn {
+				.header-font;
+				.rel;
+				.transition-short;
+				font-size: 26px;
+				text-align: center;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-weight: 400;
+				text-decoration: none !important;
+				color: #FFF;
+				width: 185px;
+				height: 60px;
+				margin: 35px auto 60px;
+				border-bottom: 1px solid @yellow;
+				overflow: hidden;
+				span {
+					.transition-short;
+					z-index: 2;
+					color: #FFF;
+				}
+				&:after {
+					.transition-short;
+					.absolute;
+					content: "";
+					display: block;
+					background-color: #FFF;
+					z-index: 1;
+					width: 100%;
+					height: 100%;
+					top: 0;
+					left: 0;
+					transform: translateY(60px);
+				}
+				&:hover {
+					span {
+						z-index: 2;
+						color: @purple;
+					}
+					&:after {
+						transform: translateY(0px);
+					}
+				}
+			}
+			.mail, .phone {
+				.header-font;
+				display: block;
+				width: 100%;
+				font-size: 26px;
+				font-weight: 100;
+				color: @yellow;
+				text-decoration: none !important;
+				text-align: center;
+				margin: 20px 0;
+			}
+		}
+	}
+
+}

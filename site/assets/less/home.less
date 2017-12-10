@@ -1,0 +1,54 @@
+.intro-page {
+	.page-style;
+
+	h1 {
+		.header-font;
+		.absolute;
+		top: 45px;
+		left: 45px;
+		color: @purple;
+		font-size: 100px;
+		font-weight: 100;
+		b {
+			font-weight: 600;
+		}
+		.name {
+			text-transform: uppercase;
+			display: block;
+			background: @yellow;
+			width: fit-content;
+			padding: 4px 5px;
+		}
+		.title {
+			padding: 4px 5px;
+			display: block;
+			width: fit-content;
+			color: @yellow;
+		}
+	}
+
+	.intro-menu {
+		.header-font;
+		.absolute;
+		bottom: 45px;
+		right: 45px;
+		ul {
+			list-style: none;
+			li {
+				margin-bottom: 50px;
+				a {
+					.transition-short;
+					color: #FFF !important;
+					font-weight: 100;
+					text-decoration: none !important;
+					font-size: 50px;
+
+					&:hover {
+						color: @yellow !important;
+					}
+				}
+			}
+		}
+	}
+
+}
